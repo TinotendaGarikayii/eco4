@@ -1,0 +1,344 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  overflow-x: hidden;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav .hamburger {
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid green;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav .hamburger .line {
+  height: 2px;
+  width: 70%;
+  background: green;
+}
+
+.banner {
+  background-color: lightgray;
+}
+.banner .left .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.banner .left .text h1 {
+  font-weight: bolder;
+}
+.banner .left .text p {
+  padding-top: 2vh;
+  font-size: larger;
+}
+.banner .left .text button {
+  border: none;
+  background-color: green;
+  border-radius: 8px;
+  width: 9rem;
+  color: white;
+}
+.banner .right img {
+  width: 100%;
+  padding-top: 4rem;
+}
+.banner .services {
+  padding-top: 8vh;
+}
+.banner .services .services-text h1 {
+  font-weight: bold;
+}
+.banner .services .card {
+  background-color: transparent;
+  font-weight: bold;
+}
+.banner .services .card p {
+  font-weight: 400;
+}
+.banner .services .card a {
+  color: green;
+  padding-left: 0%;
+}
+
+.mission .img {
+  width: 100%;
+  background-image: url("/images/colleagues-working-together-environment-project (1) 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mission .img .text-overlay {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.mission .img .text-overlay .container {
+  margin-top: 40px;
+}
+
+.benefits {
+  margin-bottom: 4em;
+  padding-top: 2rem;
+}
+.benefits .container {
+  margin-bottom: 4em;
+}
+.benefits .center-items {
+  text-align: center;
+}
+.benefits .card {
+  background-color: lightgray;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.benefits .card ol {
+  padding-left: 1rem !important;
+}
+.benefits .card ol li {
+  list-style-type: decimal !important;
+  list-style: decimal;
+}
+.benefits .questions {
+  padding-top: 5vh;
+}
+.benefits .questions .right .container {
+  margin: 50px auto;
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 5px;
+}
+.benefits .questions .right .form-group {
+  margin-bottom: 20px;
+}
+.benefits .questions .right .form-group input[type=email] {
+  width: 100%;
+}
+.benefits .questions .right .form-group input[type=text] {
+  width: 100%;
+}
+.benefits .questions .right .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  box-sizing: border-box;
+}
+.benefits .questions .right .form-group input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+.subscribe {
+  text-align: center;
+  background-color: lightgray;
+}
+.subscribe .heading {
+  margin-top: 1rem;
+}
+.subscribe form input {
+  width: 20rem;
+}
+.subscribe .btn {
+  gap: 20px;
+}
+.subscribe button {
+  border: none;
+  background-color: green;
+  width: 5rem;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: green;
+  color: white;
+  width: 100%;
+}
+.footer .text-end {
+  display: flex;
+  align-items: center;
+  padding-top: 0.7em;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    color: green;
+    gap: 12px;
+  }
+  .pc-nav .flex-container ul li {
+    color: green;
+    font-size: 20px;
+  }
+  .pc-nav .flex-container ul li button {
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: 8px;
+    width: 8rem;
+    height: 5vh;
+  }
+  .banner .left .text h1 {
+    width: 100%;
+    padding-top: 5vh;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .banner .left .text p {
+    font-size: 10px;
+    padding-bottom: 2vh;
+    padding-top: 3vh;
+  }
+  .banner .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .banner .services .cards {
+    display: flex;
+    gap: 8px;
+  }
+  .banner .services .cards .card {
+    font-weight: bold;
+  }
+  .banner .services .cards .card p {
+    font-weight: 400;
+  }
+  .banner .services .cards .card a {
+    color: green;
+    padding-left: 0%;
+  }
+  .mission .img .text-overlay {
+    display: flex;
+    text-align: left;
+    font-size: 15px;
+    padding-bottom: 5rem;
+  }
+  .mission .img .text-overlay p {
+    width: 50%;
+  }
+  .benefits .center-items {
+    text-transform: capitalize;
+  }
+  .benefits #heading {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .pc-nav .flex-container .ul {
+    gap: 85px;
+  }
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
