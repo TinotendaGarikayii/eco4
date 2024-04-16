@@ -115,14 +115,14 @@ table {
 .banner .services .services-text h1 {
   font-weight: bold;
 }
-.banner .services .card {
+.banner .services .card-one {
   background-color: transparent;
   font-weight: bold;
 }
-.banner .services .card p {
+.banner .services .card-one p {
   font-weight: 400;
 }
-.banner .services .card a {
+.banner .services .card-one a {
   color: green;
   padding-left: 0%;
 }
@@ -156,7 +156,7 @@ table {
 .benefits .container {
   margin-bottom: 4em;
 }
-.benefits .center-items {
+.benefits .center {
   text-align: center;
 }
 .benefits .card {
@@ -303,13 +303,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: flex;
     gap: 8px;
   }
-  .banner .services .cards .card {
+  .banner .services .cards .card-one {
     font-weight: bold;
   }
-  .banner .services .cards .card p {
+  .banner .services .cards .card-one p {
     font-weight: 400;
   }
-  .banner .services .cards .card a {
+  .banner .services .cards .card-one a {
     color: green;
     padding-left: 0%;
   }
@@ -322,7 +322,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .mission .img .text-overlay p {
     width: 50%;
   }
-  .benefits .center-items {
+  .benefits .center {
     text-transform: capitalize;
   }
   .benefits #heading {

@@ -113,7 +113,7 @@ table {
                 font-weight: bold;
               }    
         }
-        .card{
+        .card-one{
             background-color: transparent;
             font-weight: bold;
             p{
@@ -160,7 +160,7 @@ table {
     .container{
         margin-bottom: 4em;
     }
-    .center-items{
+    .center{
             text-align: center;
             
         }
@@ -338,7 +338,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         .cards{
             display: flex;
             gap: 8px;
-            .card{
+            .card-one{
                 font-weight: bold;
                 p{
                     font-weight: 400;
@@ -367,7 +367,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 .benefits{
-	.center-items{
+	.center{
 		text-transform: capitalize;
         
         
