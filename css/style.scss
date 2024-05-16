@@ -48,10 +48,41 @@ table {
 }
 
 //phone styles
-*{overflow-x: hidden;}
+body{overflow-x: hidden;}
 .pc-nav{
     display: none;
 }
+
+.active{
+    .pc-nav{
+        display: block !important;
+        img{
+            display: none !important;
+        }
+        ul{
+          gap: 2rem;
+          display: flex;
+          flex-direction: column;
+          color: green;
+          li{
+            button{
+                width: 7rem;
+                background: green;
+                color: white;
+                border: none;
+                border-radius: 8px;
+            }
+          }
+        }
+    }
+    .mode{
+        height: 0;
+        width: 0;
+        display: none !important;
+        background-color: black;
+    }
+}
+
 .mobile-nav{
     display: block;
     display: flex;
@@ -287,7 +318,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
    }
    .pc-nav{
     display: block;
-    
+    img{
+        display: block !important;
+    }
     .flex-container{
         display: flex;
     justify-content: space-between;
@@ -295,7 +328,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     ul{
         display: flex;
         color: green;
-        gap: 12px;
+         gap: 5rem;
+        flex-direction: row !important;
         li{
             color: green;
             font-size: 20px;

@@ -52,12 +52,38 @@ table {
   border-spacing: 0;
 }
 
-* {
+body {
   overflow-x: hidden;
 }
 
 .pc-nav {
   display: none;
+}
+
+.active .pc-nav {
+  display: block !important;
+}
+.active .pc-nav img {
+  display: none !important;
+}
+.active .pc-nav ul {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: green;
+}
+.active .pc-nav ul li button {
+  width: 7rem;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.active .mode {
+  height: 0;
+  width: 0;
+  display: none !important;
+  background-color: black;
 }
 
 .mobile-nav {
@@ -260,6 +286,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .pc-nav {
     display: block;
   }
+  .pc-nav img {
+    display: block !important;
+  }
   .pc-nav .flex-container {
     display: flex;
     justify-content: space-between;
@@ -268,7 +297,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .pc-nav .flex-container ul {
     display: flex;
     color: green;
-    gap: 12px;
+    gap: 5rem;
+    flex-direction: row !important;
   }
   .pc-nav .flex-container ul li {
     color: green;
